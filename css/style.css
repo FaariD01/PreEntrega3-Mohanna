@@ -1,6 +1,6 @@
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
@@ -36,7 +36,7 @@ footer {
 
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
@@ -102,7 +102,7 @@ header #logIn a:hover {
 }
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
@@ -161,7 +161,7 @@ nav #navBtn a:hover {
 }
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
@@ -362,7 +362,7 @@ main #infoContacto img {
 }
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
@@ -389,7 +389,7 @@ footer section p {
 
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
@@ -525,7 +525,7 @@ footer section p {
 }
 @font-face {
   font-family: lemon-titulo;
-  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
