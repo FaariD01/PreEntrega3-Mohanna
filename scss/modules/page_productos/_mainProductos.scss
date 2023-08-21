@@ -106,3 +106,54 @@
         }
     }
 }
+
+@media (max-width: 1400px){
+    #mainPageProducto{
+        display: flex;
+        aside{
+            margin-left: 5vh !important;
+
+        }
+    }   
+}
+
+@media (max-width: 768px){
+    #listadoProductos{
+        
+            
+        ul{ @include reseteo-lista;
+            li{
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                margin-left: 1vh !important;
+                border-bottom: 1px solid black;
+                a{
+                    img{
+                        width: 15vh !important;
+                    }
+                }
+        #informacionProd
+        {
+            
+            a{  
+                @include reseteo-links;
+                color: black;
+                    h2
+                    {
+                        font-family: lemon-login;
+                        font-size: 1rem;       
+                    }
+            }
+            h4{
+                font-family: lemon-login; 
+            }
+            p{
+                font-style: italic;
+            }
+                
+            }
+        }
+    }
+}
+}

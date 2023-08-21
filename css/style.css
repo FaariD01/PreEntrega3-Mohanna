@@ -90,7 +90,7 @@ nav #navBar {
   margin-bottom: 2vh;
 }
 nav #navBar input {
-  width: 89vh;
+  width: 90vh;
   height: 3vh;
   border: none;
   border-radius: 2px;
@@ -109,6 +109,28 @@ nav #navBtn a:hover {
   font-size: 1.6rem;
 }
 
+@media (max-width: 992px) {
+  #navBar {
+    margin-bottom: 2vh;
+  }
+  #navBar input {
+    width: 60vh !important;
+    height: 3vh;
+    border: none;
+    border-radius: 2px;
+  }
+}
+@media (max-width: 576px) {
+  #navBar {
+    margin-bottom: 2vh;
+  }
+  #navBar input {
+    width: 40vh !important;
+    height: 3vh;
+    border: none;
+    border-radius: 2px;
+  }
+}
 @font-face {
   font-family: lemon-titulo;
   src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
@@ -240,6 +262,60 @@ main #infoContacto img {
   width: 4vh;
 }
 
+@media (max-width: 1200px) {
+  #bannerPublicidadAsus {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  #bannerPublicidadAsus img {
+    height: 20vh !important;
+    width: 80vh;
+  }
+}
+@media (max-width: 992px) {
+  #bannerPublicidadAsus {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  #bannerPublicidadAsus img {
+    height: 15vh !important;
+    width: 60vh;
+  }
+}
+@media (max-width: 576px) {
+  #promocionesPcArmada {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #promocionesPcArmada a img {
+    width: 15vh !important;
+  }
+  #promocionesPcArmada a img:hover {
+    width: 21vh;
+  }
+  #promocionesPcArmada p {
+    font-weight: 750;
+    background-color: #687c91;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    padding: 1vh;
+  }
+  #infoContacto {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #infoContacto h3 {
+    font-size: 1rem;
+  }
+  #infoContacto img {
+    width: 4vh;
+  }
+}
 @font-face {
   font-family: lemon-titulo;
   src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
@@ -356,6 +432,43 @@ footer section p {
   font-style: italic;
 }
 
+@media (max-width: 1400px) {
+  #mainPageProducto {
+    display: flex;
+  }
+  #mainPageProducto aside {
+    margin-left: 5vh !important;
+  }
+}
+@media (max-width: 768px) {
+  #listadoProductos ul {
+    list-style-type: none;
+  }
+  #listadoProductos ul li {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 1vh !important;
+    border-bottom: 1px solid black;
+  }
+  #listadoProductos ul li a img {
+    width: 15vh !important;
+  }
+  #listadoProductos ul li #informacionProd a {
+    text-decoration: none;
+    color: black;
+  }
+  #listadoProductos ul li #informacionProd a h2 {
+    font-family: lemon-login;
+    font-size: 1rem;
+  }
+  #listadoProductos ul li #informacionProd h4 {
+    font-family: lemon-login;
+  }
+  #listadoProductos ul li #informacionProd p {
+    font-style: italic;
+  }
+}
 @font-face {
   font-family: lemon-titulo;
   src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
@@ -426,33 +539,38 @@ footer section p {
 #mainPagePcOfertas #secPcOferta img {
   width: 40vh;
   height: 40vh;
+  margin-right: 5vh;
 }
-#mainPagePcOfertas #secPcOferta div div {
+#mainPagePcOfertas #secPcOferta #infoPcOferta {
+  width: 80vh;
+}
+#mainPagePcOfertas #secPcOferta #infoPcOferta #tituloPcOferta {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-#mainPagePcOfertas #secPcOferta div div h3 {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #tituloPcOferta h3 {
   margin-right: 2vh;
+  font-size: 1rem;
 }
-#mainPagePcOfertas #secPcOferta div div p {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #tituloPcOferta p {
   background-color: #687c91;
   padding: 1.5vh;
   border-radius: 5px;
   font-weight: 600;
   color: white;
 }
-#mainPagePcOfertas #secPcOferta div #secAgregarAlCarrito {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #secAgregarAlCarrito {
   display: flex;
   justify-content: start;
   align-items: center;
   height: 10vh;
 }
-#mainPagePcOfertas #secPcOferta div #secAgregarAlCarrito img {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #secAgregarAlCarrito img {
   width: 5vh;
   margin-left: 1vh;
 }
-#mainPagePcOfertas #secPcOferta div button {
+#mainPagePcOfertas #secPcOferta #infoPcOferta button {
   width: 25vh;
   height: 5vh;
   background-color: #7cc5e7;
@@ -460,17 +578,17 @@ footer section p {
   border: none;
   border-radius: 5px;
 }
-#mainPagePcOfertas #secPcOferta div #enviosGratis {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #enviosGratis {
   display: flex;
   justify-content: start;
   align-items: center;
   height: 10vh;
 }
-#mainPagePcOfertas #secPcOferta div #enviosGratis img {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #enviosGratis img {
   width: 5vh;
   margin-right: 2vh;
 }
-#mainPagePcOfertas #secPcOferta div #btnCalcularEnvio {
+#mainPagePcOfertas #secPcOferta #infoPcOferta #btnCalcularEnvio {
   width: 15vh;
   background-color: #7cc5e7;
 }
@@ -489,6 +607,369 @@ footer section p {
   font-size: 1rem;
 }
 
+@media (max-width: 1700px) {
+  #mainPagePcOfertas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #mainPagePcOfertas aside {
+    margin-left: 5vh;
+  }
+  #mainPagePcOfertas aside h2 {
+    font-family: lemon-login;
+  }
+  #secPcOferta {
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 40vh;
+    height: 40vh;
+    margin-right: 5vh;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 70vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta h3 {
+    margin-right: 2vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta p {
+    background-color: #687c91;
+    padding: 1.5vh;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+  }
+  #secPcOferta #infoPcOferta #secAgregarAlCarrito {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+  }
+  #secPcOferta #infoPcOferta #secAgregarAlCarrito img {
+    width: 5vh;
+    margin-left: 1vh;
+  }
+  #secPcOferta #infoPcOferta button {
+    width: 25vh;
+    height: 5vh;
+    background-color: #7cc5e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  #secPcOferta #infoPcOferta #enviosGratis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+  }
+  #secPcOferta #infoPcOferta #enviosGratis img {
+    width: 5vh;
+    margin-right: 2vh;
+  }
+  #secPcOferta #infoPcOferta #btnCalcularEnvio {
+    width: 15vh;
+    background-color: #7cc5e7;
+  }
+}
+@media (max-width: 1600px) {
+  #secPcOferta {
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 30vh !important;
+    height: 30vh !important;
+    margin-right: 5vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta h3 {
+    margin-right: 2vh;
+  }
+  #secPcOferta #infoPcOferta #secAgregarAlCarrito {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+  }
+  #secPcOferta #infoPcOferta #secAgregarAlCarrito img {
+    width: 5vh !important;
+    margin-left: 1vh;
+  }
+  #secPcOferta #infoPcOferta button {
+    width: 25vh;
+    height: 5vh;
+    background-color: #7cc5e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  #secPcOferta #infoPcOferta #enviosGratis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+  }
+  #secPcOferta #infoPcOferta #enviosGratis img {
+    width: 5vh !important;
+    margin-right: 2vh;
+  }
+  #secPcOferta #infoPcOferta #btnCalcularEnvio {
+    width: 15vh;
+    background-color: #7cc5e7;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 1400px) {
+  #secPcOferta {
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 20vh !important;
+    height: 17vh !important;
+    margin-right: 5vh;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 60vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1200px) {
+  #secPcOferta {
+    width: 70vh;
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 20vh !important;
+    height: 17vh !important;
+    margin-right: 5vh;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 30vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  #secPcOferta {
+    width: 50vh;
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 20vh !important;
+    height: 17vh !important;
+    margin-right: 5vh;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 20vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  #mainPagePcOfertas aside {
+    margin-left: 1vh;
+  }
+  #mainPagePcOfertas aside h2 {
+    font-family: lemon-login;
+  }
+  #secPcOferta {
+    width: 40vh;
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 20vh !important;
+    height: 17vh !important;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 14vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #infoPcOferta h3 {
+    font-size: 1rem !important;
+  }
+  #secPcOferta button {
+    width: 15vh !important;
+    height: 5vh;
+    background-color: #7cc5e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  #secPcOferta #secAgregarAlCarrito button {
+    font-size: 0.5rem;
+  }
+  #secPcOferta #secAgregarAlCarrito img {
+    width: 0px;
+    height: 0px !important;
+  }
+  #secPcOferta #enviosGratis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #enviosGratis img {
+    width: 5vh;
+    margin-right: 2vh;
+  }
+  #secPcOferta #btnCalcularEnvio {
+    width: 15vh;
+    background-color: #7cc5e7;
+  }
+}
+@media (max-width: 768px) {
+  #mainPagePcOfertas aside {
+    margin-left: 3vh;
+    width: 20vh;
+  }
+  #mainPagePcOfertas aside h2 {
+    font-family: lemon-login;
+  }
+  #secPcOferta {
+    width: 40vh;
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 20vh !important;
+    height: 17vh !important;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 14vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #infoPcOferta h3 {
+    font-size: 1rem !important;
+  }
+  #secPcOferta button {
+    width: 15vh !important;
+    height: 5vh;
+    background-color: #7cc5e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  #secPcOferta #secAgregarAlCarrito button {
+    font-size: 0.5rem;
+  }
+  #secPcOferta #secAgregarAlCarrito img {
+    width: 0px;
+    height: 0px !important;
+  }
+  #secPcOferta #enviosGratis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #enviosGratis img {
+    width: 5vh;
+    margin-right: 2vh;
+  }
+  #secPcOferta #btnCalcularEnvio {
+    width: 15vh;
+    background-color: #7cc5e7;
+  }
+}
+@media (max-width: 600px) {
+  #mainPagePcOfertas aside {
+    margin-left: 3vh;
+    width: 15vh;
+    font-size: 0.7rem;
+  }
+  #mainPagePcOfertas aside h2 {
+    font-family: lemon-login;
+  }
+  #secPcOferta {
+    width: 40vh;
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 15vh !important;
+    height: 15vh !important;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 10vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #infoPcOferta h3 {
+    font-size: 1rem !important;
+  }
+  #secPcOferta button {
+    width: 15vh !important;
+    height: 5vh;
+    background-color: #7cc5e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  #secPcOferta #secAgregarAlCarrito button {
+    font-size: 0.5rem;
+  }
+  #secPcOferta #enviosGratis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #enviosGratis img {
+    width: 5vh;
+    margin-right: 2vh;
+  }
+  #secPcOferta #btnCalcularEnvio {
+    width: 15vh;
+    background-color: #7cc5e7;
+  }
+  #descripcionPcOferta {
+    font-family: lemon-login;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35vh;
+    align-items: start;
+    border-top: 1px solid black;
+  }
+  #descripcionPcOferta p {
+    font-size: 0.5rem;
+  }
+  #descripcionPcOferta ul li p {
+    font-size: 0.7rem !important;
+  }
+}
 #mainAyuda {
   display: flex;
   flex-direction: column;

@@ -13,7 +13,7 @@ nav{
         margin-bottom: 2vh;
         
         input{
-            width: 89vh;
+            width: 90vh;
             height: 3vh;
             border: none;
             border-radius: 2px;
@@ -34,3 +34,35 @@ nav{
         }
     }
 }
+
+
+@media (max-width: 992px){
+
+    
+        #navBar{
+            margin-bottom: 2vh;
+            
+            input{
+                width: 60vh !important;
+                height: 3vh;
+                border: none;
+                border-radius: 2px;
+            }
+        }
+
+    }
+@media (max-width: 576px){
+
+    
+        #navBar{
+            margin-bottom: 2vh;
+            
+            input{
+                width: 40vh !important;
+                height: 3vh;
+                border: none;
+                border-radius: 2px;
+            }
+        }
+
+    }

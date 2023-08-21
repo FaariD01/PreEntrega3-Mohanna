@@ -125,3 +125,65 @@ main{
        
     }
 }
+
+@media (max-width: 1200px){
+    #bannerPublicidadAsus{
+        display: flex;
+        justify-content: center;   
+        margin-top: 2vh;     
+        img{
+            height: 20vh !important;
+            width: 80vh; 
+        }
+    }
+}
+
+@media (max-width: 992px){
+    #bannerPublicidadAsus{
+        display: flex;
+        justify-content: center;   
+        margin-top: 2vh;     
+        img{
+            height: 15vh !important;
+            width: 60vh; 
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #promocionesPcArmada{
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-evenly;       
+            a{
+                img{
+                    width: 15vh !important;
+                    &:hover{
+                        width: 21vh;
+                    }
+                }
+                
+            }
+            p{
+                font-weight: 750;
+                background-color: $colorPrincipal;
+                text-align: center;
+                border-radius: 3px;
+                color: white;
+                padding: 1vh;
+                
+            }
+    }
+    #infoContacto{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        h3{
+            font-size: 1rem;
+        }
+        img{
+            width: 4vh;
+        }
+       
+    }
+}
