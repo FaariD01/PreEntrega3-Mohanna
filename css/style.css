@@ -1,12 +1,11 @@
 @font-face {
   font-family: lemon-titulo;
-  src: url(../fonts/LEMONMILK-RegularItalic.otf);
+  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
 }
 @font-face {
   font-family: lemon-login;
-  src: url(../fonts/LEMONMILK-LightItalic.otf);
+  src: url(../../fonts/LEMONMILK-LightItalic.otf);
 }
-
 body {
   background-color: rgb(247, 242, 242);
   margin: 0;
@@ -35,14 +34,6 @@ footer {
   grid-area: footer;
 }
 
-@font-face {
-  font-family: lemon-titulo;
-  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
-}
-@font-face {
-  font-family: lemon-login;
-  src: url(../../fonts/LEMONMILK-LightItalic.otf);
-}
 @font-face {
   font-family: lemon-titulo;
   src: url(../../fonts/LEMONMILK-RegularItalic.otf);
@@ -117,14 +108,6 @@ header #logIn a:hover {
   font-family: lemon-login;
   src: url(../../fonts/LEMONMILK-LightItalic.otf);
 }
-@font-face {
-  font-family: lemon-titulo;
-  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
-}
-@font-face {
-  font-family: lemon-login;
-  src: url(../../fonts/LEMONMILK-LightItalic.otf);
-}
 nav {
   background-color: #687c91;
   display: flex;
@@ -175,14 +158,6 @@ nav #navBtn a:hover {
     border: none;
     border-radius: 2px;
   }
-}
-@font-face {
-  font-family: lemon-titulo;
-  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
-}
-@font-face {
-  font-family: lemon-login;
-  src: url(../../fonts/LEMONMILK-LightItalic.otf);
 }
 @font-face {
   font-family: lemon-titulo;
@@ -384,14 +359,6 @@ main #infoContacto img {
   #infoContacto img {
     width: 4vh;
   }
-}
-@font-face {
-  font-family: lemon-titulo;
-  src: url(../../fonts/LEMONMILK-RegularItalic.otf);
-}
-@font-face {
-  font-family: lemon-login;
-  src: url(../../fonts/LEMONMILK-LightItalic.otf);
 }
 @font-face {
   font-family: lemon-titulo;
@@ -1132,6 +1099,15 @@ footer section p {
 #mainAyuda #comoCoprar img {
   width: 10vh;
   margin-top: 5vh;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(../fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(../../fonts/LEMONMILK-LightItalic.otf);
 }
 
 /*# sourceMappingURL=style.css.map */
