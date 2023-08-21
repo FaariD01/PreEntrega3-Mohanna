@@ -1,14 +1,7 @@
 @import "./variables";
 @import "./mixins";
 
-@font-face{
-    font-family: lemon-titulo;
-    src: url(../../fonts/LEMONMILK-RegularItalic.otf);
-}
-@font-face{
-    font-family: lemon-login;
-    src: url(../../fonts/LEMONMILK-LightItalic.otf);
-}
+
 
 main{
     margin-top: 4vh;
