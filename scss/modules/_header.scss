@@ -1,7 +1,14 @@
 @import "./variables";
 @import "./mixins";
 
-
+@font-face{
+    font-family: lemon-titulo;
+    src: url(../../fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face{
+    font-family: lemon-login;
+    src: url(../../fonts/LEMONMILK-LightItalic.otf);
+}
 
 header{
     background-image: linear-gradient(to top, $colorPrincipal 0%, rgb(80, 71, 71) 100%);
