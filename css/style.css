@@ -71,6 +71,35 @@ header #logIn a:hover {
   color: #ffffff;
 }
 
+@media (max-width: 490px) {
+  header {
+    background-image: linear-gradient(to top, #687c91 0%, rgb(80, 71, 71) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header #logoRedes img {
+    width: 3vh;
+  }
+  header #logoRedes img:hover {
+    width: 6vh;
+  }
+  header h1 {
+    font-size: 1.5rem !important;
+    font-family: lemon-titulo;
+    color: rgb(0, 0, 0);
+  }
+  header #logIn img {
+    width: 25px;
+    margin-left: 4vh;
+  }
+  header #logIn a {
+    color: black;
+    font-family: lemon-login;
+    font-size: 0.5rem !important;
+    text-decoration: none;
+  }
+}
 @font-face {
   font-family: lemon-titulo;
   src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
@@ -106,7 +135,6 @@ nav #navBtn a {
 }
 nav #navBtn a:hover {
   color: #ffffff;
-  font-size: 1.6rem;
 }
 
 @media (max-width: 992px) {
@@ -316,6 +344,22 @@ main #infoContacto img {
     width: 4vh;
   }
 }
+@media (max-width: 490px) {
+  #infoContacto {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #infoContacto h3 {
+    font-size: 1rem;
+  }
+  #infoContacto p {
+    font-size: 0.7rem;
+  }
+  #infoContacto img {
+    width: 4vh;
+  }
+}
 @font-face {
   font-family: lemon-titulo;
   src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
@@ -467,6 +511,16 @@ footer section p {
   }
   #listadoProductos ul li #informacionProd p {
     font-style: italic;
+  }
+}
+@media (max-width: 576px) {
+  #mainPageProducto aside {
+    margin-left: 3vh;
+    width: 15vh;
+    font-size: 0.7rem;
+  }
+  #mainPageProducto aside h2 {
+    font-family: lemon-login;
   }
 }
 @font-face {
@@ -968,6 +1022,61 @@ footer section p {
   }
   #descripcionPcOferta ul li p {
     font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 490px) {
+  #mainPagePcOfertas aside {
+    margin-left: 3vh;
+    width: 15vh;
+    font-size: 0.7rem;
+  }
+  #mainPagePcOfertas aside h2 {
+    font-family: lemon-login;
+  }
+  #secPcOferta {
+    width: 40vh;
+    font-family: lemon-login;
+    display: flex;
+  }
+  #secPcOferta img {
+    width: 10vh !important;
+    height: 10vh !important;
+  }
+  #secPcOferta #infoPcOferta {
+    width: 10vh;
+  }
+  #secPcOferta #infoPcOferta #tituloPcOferta {
+    display: flex;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #infoPcOferta h3 {
+    font-size: 1rem !important;
+  }
+  #secPcOferta button {
+    width: 15vh !important;
+    height: 5vh;
+    background-color: #7cc5e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  #secPcOferta #secAgregarAlCarrito button {
+    font-size: 0.5rem;
+  }
+  #secPcOferta #enviosGratis {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 10vh;
+    font-size: 0.7rem !important;
+  }
+  #secPcOferta #enviosGratis img {
+    width: 5vh;
+    margin-right: 2vh;
+  }
+  #secPcOferta #btnCalcularEnvio {
+    width: 15vh;
+    background-color: #7cc5e7;
   }
 }
 #mainAyuda {

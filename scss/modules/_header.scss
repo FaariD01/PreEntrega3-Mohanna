@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+    
     #logoRedes{
         img{
             
@@ -39,5 +39,45 @@ header{
             }
         }
 
+    }
+}
+
+@media (max-width: 490px){
+    header{
+        background-image: linear-gradient(to top, $colorPrincipal 0%, rgb(80, 71, 71) 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        #logoRedes{
+            img{
+                
+                width: 3vh;
+                &:hover{
+                    width: 6vh;
+                }
+            }
+        }
+        h1{
+            font-size: 1.5rem !important;
+            font-family: lemon-titulo;
+            color: rgb(0, 0, 0);
+        }
+        #logIn{
+            
+            img{
+                width: 25px;
+                margin-left: 4vh;
+            }
+            a{  
+                color: black;
+                font-family: lemon-login;
+                font-size: 0.5rem !important;
+                @include reseteo-links;
+                
+
+            }
+    
+        }
     }
 }

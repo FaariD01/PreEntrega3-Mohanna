@@ -157,3 +157,16 @@
     }
 }
 }
+
+@media (max-width: 576px){
+    #mainPageProducto{
+        aside{
+        margin-left: 3vh;
+        width: 15vh;
+        font-size: 0.7rem;
+        h2{
+            font-family: lemon-login;
+        }
+    }
+}
+}

@@ -187,3 +187,20 @@ main{
        
     }
 }
+@media (max-width: 490px){
+    #infoContacto{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        h3{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+        img{
+            width: 4vh;
+        }
+       
+    }
+}
