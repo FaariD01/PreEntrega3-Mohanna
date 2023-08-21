@@ -1,0 +1,108 @@
+@import "../mixins";
+@import "../variables";
+
+#mainPageProducto{
+    display: flex;
+    aside{
+        margin-left: 20vh;
+        h2{
+            font-family: lemon-login;
+        }
+        #boton{
+            display: flex;
+            
+            .boton{
+                margin: 1vh 2vh 0vh 2vh;
+            
+            }
+            
+            .lbl-switch{
+                display: inline-block;
+                width: 55px;
+                height: 30px;
+                background-color: grey;
+                border-radius: 100px;
+                position: relative;
+                cursor: pointer;
+            }
+            #btn-switch:checked~ .lbl-switch{
+                background-color: $colorSecundario;
+            }
+            
+            .lbl-switch:after{
+                position: absolute;
+                content: '';
+                width: 22px;
+                height: 22px;
+                background-color: #fff;
+                border-radius: 100px;
+                top: 4px;
+                left: 5px;
+                transition: 0.3s;
+            }
+            
+            #btn-switch:checked~ .lbl-switch:after{
+                left: 28px;
+            }
+            
+            
+            #btn-switch{
+                display: none;
+            }
+
+            
+        }
+        #categorias{
+            h3{
+                font-family: lemon-titulo;
+                
+            }
+            ul{
+                @include reseteo-lista;
+                li{
+                    a{
+                        @include reseteo-links;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+    #listadoProductos{
+        
+            
+            ul{ @include reseteo-lista;
+                li{
+                    display: flex;
+                    justify-content: start;
+                    align-items: flex-start;
+                    margin-left: 10vh;
+                    border-bottom: 1px solid black;
+                    a{
+                        img{
+                            width: 25vh;
+                        }
+                    }
+            #informacionProd
+            {
+                
+                a{  
+                    @include reseteo-links;
+                    color: black;
+                        h2
+                        {
+                            font-family: lemon-login;       
+                        }
+                }
+                h4{
+                    font-family: lemon-login; 
+                }
+                p{
+                    font-style: italic;
+                }
+                    
+                }
+            }
+        }
+    }
+}

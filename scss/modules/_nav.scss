@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./mixins";
+
+nav{
+    background-color: $colorPrincipal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    #navBar{
+        margin-bottom: 2vh;
+        
+        input{
+            width: 89vh;
+            height: 3vh;
+            border: none;
+            border-radius: 2px;
+        }
+    }
+    #navBtn{
+        font-size: 1.5rem;
+        
+        a{
+            @include reseteo-links;
+            color: black;
+            margin-left: 2vh;
+            margin-right: 2vh;
+            &:hover{
+                color: #ffffff;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

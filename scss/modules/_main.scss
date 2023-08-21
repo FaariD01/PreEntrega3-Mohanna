@@ -1,0 +1,127 @@
+@import "./variables";
+@import "./mixins";
+
+main{
+    margin-top: 4vh;
+    
+    #tituloPcPromo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #logoFuego{
+            width: 3vh;
+        }
+        h2{
+            text-align: center;
+            font-family: lemon-login;
+            margin: 0vh 1vh 0vh 1vh;
+        }
+    }    
+    #promocionesPcArmada{
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-evenly;       
+            a{
+                img{
+                    width: 20vh;
+                    &:hover{
+                        width: 21vh;
+                    }
+                }
+                
+            }
+            p{
+                font-weight: 750;
+                background-color: $colorPrincipal;
+                text-align: center;
+                border-radius: 3px;
+                color: white;
+                padding: 1vh;
+                
+            }
+    }
+    #bannerPublicidadAsus{
+        display: flex;
+        justify-content: center;   
+        margin-top: 2vh;     
+        img{
+            height: 35vh;  
+        }
+    }
+    #productosDestacados{
+        margin: 3vh 0vh 3vh 0vh ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to top, $colorPrincipal 30%, rgb(80, 71, 71) 100%);
+
+        #secTituloProdDestacados{
+
+            display: flex;
+            justify-content: center;
+
+            #tituloProdDestacados{
+                font-family: lemon-login;
+                color: white;
+            }
+            img{
+                width: 4vh;
+            }
+        }
+        .slider-frame {
+            width: 20vh;
+            height: auto;
+            margin:0px auto 0;
+            overflow: hidden;
+        }
+        
+        .slider-frame ul {
+            display: flex;
+            padding: 0;
+            width: 400%;
+            
+            animation: slide 20s infinite alternate ease-in-out;
+        }
+        
+        .slider-frame li {
+            width: 100%;
+            list-style: none;
+            text-align: center;
+        }
+        .slider-frame img {
+            width: 100%;
+        }
+        .slider-frame p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-radius: 4px;
+            color: white;
+            
+        }
+        
+        @keyframes slide {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+            
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+            
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+            
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        }
+    }
+    #infoContacto{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        
+        img{
+            width: 4vh;
+        }
+       
+    }
+}

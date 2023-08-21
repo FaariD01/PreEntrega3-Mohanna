@@ -1,0 +1,29 @@
+@import "./mixins";
+body{
+    background-color: rgb(247, 242, 242);
+    @include reset;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 3fr 3fr 0.5fr;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "main main"
+    "footer footer"
+    ;
+}
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}

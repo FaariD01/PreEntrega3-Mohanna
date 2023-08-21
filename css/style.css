@@ -1,0 +1,506 @@
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+body {
+  background-color: rgb(247, 242, 242);
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.7fr 0.7fr 3fr 3fr 0.5fr;
+  grid-template-areas: "header header" "nav nav" "main main" "main main" "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+header {
+  background-image: linear-gradient(to top, #687c91 0%, rgb(80, 71, 71) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header #logoRedes img {
+  width: 5vh;
+}
+header #logoRedes img:hover {
+  width: 6vh;
+}
+header h1 {
+  font-family: lemon-titulo;
+  color: rgb(0, 0, 0);
+}
+header #logIn img {
+  width: 25px;
+  margin-left: 4vh;
+}
+header #logIn a {
+  color: black;
+  font-family: lemon-login;
+  text-decoration: none;
+}
+header #logIn a:hover {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+nav {
+  background-color: #687c91;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+nav #navBar {
+  margin-bottom: 2vh;
+}
+nav #navBar input {
+  width: 89vh;
+  height: 3vh;
+  border: none;
+  border-radius: 2px;
+}
+nav #navBtn {
+  font-size: 1.5rem;
+}
+nav #navBtn a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+nav #navBtn a:hover {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+main {
+  margin-top: 4vh;
+}
+main #tituloPcPromo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #tituloPcPromo #logoFuego {
+  width: 3vh;
+}
+main #tituloPcPromo h2 {
+  text-align: center;
+  font-family: lemon-login;
+  margin: 0vh 1vh 0vh 1vh;
+}
+main #promocionesPcArmada {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+main #promocionesPcArmada a img {
+  width: 20vh;
+}
+main #promocionesPcArmada a img:hover {
+  width: 21vh;
+}
+main #promocionesPcArmada p {
+  font-weight: 750;
+  background-color: #687c91;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  padding: 1vh;
+}
+main #bannerPublicidadAsus {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+main #bannerPublicidadAsus img {
+  height: 35vh;
+}
+main #productosDestacados {
+  margin: 3vh 0vh 3vh 0vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top, #687c91 30%, rgb(80, 71, 71) 100%);
+}
+main #productosDestacados #secTituloProdDestacados {
+  display: flex;
+  justify-content: center;
+}
+main #productosDestacados #secTituloProdDestacados #tituloProdDestacados {
+  font-family: lemon-login;
+  color: white;
+}
+main #productosDestacados #secTituloProdDestacados img {
+  width: 4vh;
+}
+main #productosDestacados .slider-frame {
+  width: 20vh;
+  height: auto;
+  margin: 0px auto 0;
+  overflow: hidden;
+}
+main #productosDestacados .slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+main #productosDestacados .slider-frame li {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+main #productosDestacados .slider-frame img {
+  width: 100%;
+}
+main #productosDestacados .slider-frame p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  color: white;
+}
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+main #infoContacto {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+main #infoContacto img {
+  width: 4vh;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #687c91 30%, rgb(80, 71, 71) 100%);
+  color: black;
+}
+footer section {
+  display: flex;
+}
+footer section img {
+  width: 3vh;
+  margin-right: 1vh;
+}
+footer section p {
+  color: grey;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+#mainPageProducto {
+  display: flex;
+}
+#mainPageProducto aside {
+  margin-left: 20vh;
+}
+#mainPageProducto aside h2 {
+  font-family: lemon-login;
+}
+#mainPageProducto aside #boton {
+  display: flex;
+}
+#mainPageProducto aside #boton .boton {
+  margin: 1vh 2vh 0vh 2vh;
+}
+#mainPageProducto aside #boton .lbl-switch {
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+#mainPageProducto aside #boton #btn-switch:checked ~ .lbl-switch {
+  background-color: #7cc5e7;
+}
+#mainPageProducto aside #boton .lbl-switch:after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 100px;
+  top: 4px;
+  left: 5px;
+  transition: 0.3s;
+}
+#mainPageProducto aside #boton #btn-switch:checked ~ .lbl-switch:after {
+  left: 28px;
+}
+#mainPageProducto aside #boton #btn-switch {
+  display: none;
+}
+#mainPageProducto aside #categorias h3 {
+  font-family: lemon-titulo;
+}
+#mainPageProducto aside #categorias ul {
+  list-style-type: none;
+}
+#mainPageProducto aside #categorias ul li a {
+  text-decoration: none;
+  color: grey;
+}
+#mainPageProducto #listadoProductos ul {
+  list-style-type: none;
+}
+#mainPageProducto #listadoProductos ul li {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-left: 10vh;
+  border-bottom: 1px solid black;
+}
+#mainPageProducto #listadoProductos ul li a img {
+  width: 25vh;
+}
+#mainPageProducto #listadoProductos ul li #informacionProd a {
+  text-decoration: none;
+  color: black;
+}
+#mainPageProducto #listadoProductos ul li #informacionProd a h2 {
+  font-family: lemon-login;
+}
+#mainPageProducto #listadoProductos ul li #informacionProd h4 {
+  font-family: lemon-login;
+}
+#mainPageProducto #listadoProductos ul li #informacionProd p {
+  font-style: italic;
+}
+
+@font-face {
+  font-family: lemon-titulo;
+  src: url(/assets/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: lemon-login;
+  src: url(/assets/fonts/LEMONMILK-LightItalic.otf);
+}
+#mainPagePcOfertas {
+  display: flex;
+  flex-wrap: wrap;
+}
+#mainPagePcOfertas aside {
+  margin-left: 20vh;
+}
+#mainPagePcOfertas aside h2 {
+  font-family: lemon-login;
+}
+#mainPagePcOfertas aside #boton {
+  display: flex;
+}
+#mainPagePcOfertas aside #boton .boton {
+  margin: 1vh 2vh 0vh 2vh;
+}
+#mainPagePcOfertas aside #boton .lbl-switch {
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+#mainPagePcOfertas aside #boton #btn-switch:checked ~ .lbl-switch {
+  background-color: #7cc5e7;
+}
+#mainPagePcOfertas aside #boton .lbl-switch:after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 100px;
+  top: 4px;
+  left: 5px;
+  transition: 0.3s;
+}
+#mainPagePcOfertas aside #boton #btn-switch:checked ~ .lbl-switch:after {
+  left: 28px;
+}
+#mainPagePcOfertas aside #boton #btn-switch {
+  display: none;
+}
+#mainPagePcOfertas aside #categorias h3 {
+  font-family: lemon-titulo;
+}
+#mainPagePcOfertas aside #categorias ul {
+  list-style-type: none;
+}
+#mainPagePcOfertas aside #categorias ul li a {
+  text-decoration: none;
+  color: grey;
+}
+#mainPagePcOfertas #secPcOferta {
+  font-family: lemon-login;
+  display: flex;
+}
+#mainPagePcOfertas #secPcOferta img {
+  width: 40vh;
+  height: 40vh;
+}
+#mainPagePcOfertas #secPcOferta div div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#mainPagePcOfertas #secPcOferta div div h3 {
+  margin-right: 2vh;
+}
+#mainPagePcOfertas #secPcOferta div div p {
+  background-color: #687c91;
+  padding: 1.5vh;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+#mainPagePcOfertas #secPcOferta div #secAgregarAlCarrito {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 10vh;
+}
+#mainPagePcOfertas #secPcOferta div #secAgregarAlCarrito img {
+  width: 5vh;
+  margin-left: 1vh;
+}
+#mainPagePcOfertas #secPcOferta div button {
+  width: 25vh;
+  height: 5vh;
+  background-color: #7cc5e7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#mainPagePcOfertas #secPcOferta div #enviosGratis {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 10vh;
+}
+#mainPagePcOfertas #secPcOferta div #enviosGratis img {
+  width: 5vh;
+  margin-right: 2vh;
+}
+#mainPagePcOfertas #secPcOferta div #btnCalcularEnvio {
+  width: 15vh;
+  background-color: #7cc5e7;
+}
+#mainPagePcOfertas #descripcionPcOferta {
+  font-family: lemon-login;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35vh;
+  align-items: start;
+  border-top: 1px solid black;
+}
+#mainPagePcOfertas #descripcionPcOferta p {
+  font-size: 0.8rem;
+}
+#mainPagePcOfertas #descripcionPcOferta ul li p {
+  font-size: 1rem;
+}
+
+#mainAyuda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#mainAyuda #comoCoprar {
+  text-align: center;
+}
+#mainAyuda #comoCoprar img {
+  width: 10vh;
+  margin-top: 5vh;
+}
+
+/*# sourceMappingURL=style.css.map */

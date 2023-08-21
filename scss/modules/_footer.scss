@@ -1,0 +1,21 @@
+@import "./variables";
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, $colorPrincipal 30%, rgb(80, 71, 71) 100%);
+    color: black;
+    section{
+        display: flex;
+        img{
+            width: 3vh;
+            margin-right: 1vh;
+        }
+        p{
+            color: grey;
+        }
+    }
+    
+}

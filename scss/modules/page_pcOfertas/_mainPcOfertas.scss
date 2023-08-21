@@ -1,0 +1,157 @@
+@import "../mixins";
+@import "../variables";
+
+#mainPagePcOfertas{
+    display: flex;
+    flex-wrap: wrap;
+    aside{
+        margin-left: 20vh;
+        h2{
+            font-family: lemon-login;
+        }
+        #boton{
+            display: flex;
+            
+            .boton{
+                margin: 1vh 2vh 0vh 2vh;
+            
+            }
+            
+            .lbl-switch{
+                display: inline-block;
+                width: 55px;
+                height: 30px;
+                background-color: grey;
+                border-radius: 100px;
+                position: relative;
+                cursor: pointer;
+            }
+            #btn-switch:checked~ .lbl-switch{
+                background-color: $colorSecundario;
+            }
+            
+            .lbl-switch:after{
+                position: absolute;
+                content: '';
+                width: 22px;
+                height: 22px;
+                background-color: #fff;
+                border-radius: 100px;
+                top: 4px;
+                left: 5px;
+                transition: 0.3s;
+            }
+            
+            #btn-switch:checked~ .lbl-switch:after{
+                left: 28px;
+            }
+            
+            
+            #btn-switch{
+                display: none;
+            }
+
+            
+        }
+        #categorias{
+            h3{
+                font-family: lemon-titulo;
+                
+            }
+            ul{
+                @include reseteo-lista;
+                li{
+                    a{
+                        @include reseteo-links;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+    #secPcOferta{
+        font-family: lemon-login;
+        display: flex;
+        img{
+            width: 40vh;
+            height: 40vh;
+        }
+        
+        div{
+            
+            div{
+                display: flex;
+                align-items: center; 
+                justify-content: start;
+
+                h3{
+                    margin-right: 2vh;
+                }
+                p{
+                    
+                    background-color: $colorPrincipal;
+                    padding: 1.5vh;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    color: white;
+                    
+                }
+            }
+            #secAgregarAlCarrito{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                height: 10vh;
+                
+                img{
+                    width: 5vh;
+                    margin-left: 1vh;
+                }
+            }
+            button{
+                width: 25vh;
+                height: 5vh;
+                background-color: $colorSecundario;
+                color: white;
+                border: none;
+                border-radius: 5px;                
+            }
+            #enviosGratis{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                height: 10vh;
+                img{
+                    width: 5vh;
+                    margin-right: 2vh;
+                }
+            }
+            #btnCalcularEnvio{
+                width: 15vh;
+                background-color: $colorSecundario;
+            }
+        }
+        
+    }
+    #descripcionPcOferta{
+        font-family: lemon-login;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35vh;
+        align-items: start;
+        border-top: 1px solid black;
+        p{
+            font-size: 0.8rem;
+        }
+        ul{
+            li{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+       
+      
+    
+}
